@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness  Page</title>
+  <link rel="stylesheet" href="style.css" /> 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+</head>
+<body>
+
+    <!-- header section -->
+  <header class="container hero fade">
+  <nav class="navbar">
+    <div class="logo">Sport Club</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<!-- the first section -->
+<section class="hero">
+  <div class="hero-image">
+    <img src="images/man.jpg" alt="Image">
+  </div>
+
+   <div class="hero-text">
+    <h1>Welcome to MyClub</h1>
+    <p>we stay with you until you reach your goal with simple lessons and expert choachers.</p>
+  </div>
+</section>
+
+  <!-- seccond section  -->
+<section class="container section-white fade">
+<div class="two-cols">
+<div>
+<h2>Lorem Ipsum Est</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum vero accusantium libero a ipsa ut dolore praesentium, natus saepe voluptas quia non rem rerum aut quas sed reiciendis nostrum!.</p>
+</div>
+<img src="images/coach.jpg">
+</div>
+<div class="features">
+<div class="feature-box">
+    <h1>online lessons</h1>
+<p> 
+     Lorem ipsum dolor sit amet…</p>
+</div>
+<div class="feature-box">
+    <h1>coaching</h1>
+    <p> 
+     Lorem ipsum dolor sit amet…</p>
+</div>
+<div class="feature-box">
+    <h1>Nutrition</h1>
+    <p> 
+     Lorem ipsum dolor sit amet…</p>
+</div>
+</div>
+</section>
+
+
+
+
+ <!-- the third section -->
+<section class="container trainers fade">
+<h2>Trainers</h2>
+<div class="trainers-grid">
+<img src="images/body.jpg"/>
+<img src="images/fitness.jpg" />
+<img src="images/appetizer.jpg" />
+</div>
+</section>
+
+
+
+<!-- footer section -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>MyClub</h3>
+      <p>Your place to transform your body.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: club@gmail.com</p>
+      <p>Phone: +212 600 000 000</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 MyClub. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+  <script>
+// Reveal animation
+$(window).on("scroll", function(){
+$(".fade").each(function(){
+let top = $(this).offset().top;
+let scroll = $(window).scrollTop();
+let height = $(window).height();
+if(scroll + height - 60 > top) $(this).addClass("show");
+});
+});
+
+</script>
+</body>
+</html>
